@@ -59,7 +59,7 @@ export default function EditProfile() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["profile"] });
       setToast(true);
-      router.push('/'); // ⬅️ Redirect to homepage
+      router.push('/');
     },
   });
 

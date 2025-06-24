@@ -15,10 +15,10 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Simulate login logic
+  
     if (email === 'admin@example.com' && password === 'admin') {
-      document.cookie = `token=demo-token; path=/` // simulate token
-      router.push('/edit-profile') // redirect to protected route
+      document.cookie = `token=demo-token; path=/`
+      router.push('/edit-profile') 
     } else {
       setError('Invalid credentials')
     }

@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 import { Providers } from "./providers"
 import Toast from "@/components/Toast"
-import "./globals.css" // Make sure Tailwind is imported here
+import "./globals.css"  
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

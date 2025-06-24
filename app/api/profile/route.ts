@@ -8,9 +8,10 @@ let fakeData = {
   location: "Earth"
 };
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   return NextResponse.json(fakeData);
 }
+
 
 export async function PUT(req: NextRequest) {
   const updated = await req.json();

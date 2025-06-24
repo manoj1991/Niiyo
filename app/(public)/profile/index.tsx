@@ -1,8 +1,11 @@
 
 import Link from "next/link"
+import { headers } from 'next/headers'
 import { Button } from "@/components/ui/button"
 async function getProfile() {
-    const res = await fetch('http://localhost:3000/api/profile', {
+  const host = (await headers()).get("host")
+  const protocol = process.env.NODE_ENV === "development" ? "http" : "https"
+  const res = await fetch(`${protocol}://${host}/api/profile`, {
       cache: 'no-store',
     })
     return res.json()
