@@ -107,7 +107,7 @@
 }
 
 .header-profile {
-  background: linear-gradient(to right, #e53935, #d32f2f);
+  background: linear-gradient(60deg, #26c6da, #00acc1);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   padding: 1rem;
   color: white;
